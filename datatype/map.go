@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main2() {
+func main() {
 	studentsAge := map[string]int{
 		"john": 32,
 		"bob":  31,

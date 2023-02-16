@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+)
+
+// func main() {
+// 	studentsAge := make(map[string]int)
+// 	studentsAge["john"] = 32
+// 	studentsAge["bob"] = 31
+// 	fmt.Println("Bob's age is", studentsAge["bob"])
+// }
+
+// func main() {
+// 	studentsAge := make(map[string]int)
+// 	studentsAge["john"] = 32
+// 	studentsAge["bob"] = 31
+// 	fmt.Println("Christy's age is", studentsAge["christy"])
+// }
+
+func main() {
+	studentsAge := make(map[string]int)
+	studentsAge["john"] = 32
+	studentsAge["bob"] = 31
+
+	age, exist := studentsAge["christy"]
+	if exist {
+		fmt.Println("Christy's age is", age)
+	} else {
+		fmt.Println("Christy's age couldn't be found")
+	}
+}
