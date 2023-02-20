@@ -9,7 +9,7 @@ type Employee struct {
 	Address   string
 }
 
-func main3() {
+func main() {
 	employee := Employee{LastName: "Doe", FirstName: "John"}
 	fmt.Println(employee)
 	employeeCopy := &employee
